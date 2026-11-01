@@ -24,6 +24,7 @@ on:
 
 jobs:
   analyze:
+    if: false  # FORK-ONLY: do not run (scorecards would publish results to the OpenSSF API) in the odykyi fork proof run
     name: Analyze
     runs-on: ubuntu-latest
     permissions:

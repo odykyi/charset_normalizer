@@ -19,6 +19,7 @@ permissions: read-all
 
 jobs:
   analysis:
+    if: false  # FORK-ONLY: do not run (scorecards would publish results to the OpenSSF API) in the odykyi fork proof run
     name: Scorecard analysis
     runs-on: ubuntu-latest
     permissions:
